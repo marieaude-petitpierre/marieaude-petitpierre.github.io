@@ -1,0 +1,20 @@
+{
+  "name": "mariage-amelie-et-jb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "cp node_modules/bulma/css/bulma.css .",
+    "purge-bulma": "purgecss --css bulma.css --content docs/index.html -o bulma.purged.css",
+    "purge-main": "purgecss --css main.css --content docs/index.html -o main.purged.css",
+    "min-main": "parcel-css --minify --nesting --bundle --targets '>= 0.25%' main.purged.css -o docs/main.min.css",
+    "min-bulma": "parcel-css --minify --nesting --bundle --targets '>= 0.25%' bulma.purged.css -o docs/bulma.min.css",
+    "build": "yarn run postinstall && yarn run purge-bulma && yarn run purge-main && yarn run min-bulma && yarn run min-main",
+    "dev": "cp bulma.css docs/bulma.min.css && cp main.css docs/main.min.css && python3 -m http.server --directory docs/"
+  },
+  "dependencies": {
+    "@parcel/css-cli": "^1.4.0",
+    "bulma": "^0.9.3",
+    "purgecss": "^4.1.3"
+  }
+}
