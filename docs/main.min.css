@@ -1,0 +1,1 @@
+@font-face{font-family:Papyrus;src:local(Papyrus),url(fonts/Papyrus.woff2)format("woff2");font-weight:400;font-style:normal;font-display:swap}html *{font-family:Papyrus,sans-serif}.color-linear-gradiant{background:linear-gradient(325deg,#fff 42%,#79b8ee 100%)}.footer-bottom{height:2.5rem;flex-direction:column;align-items:center;margin-top:13rem;display:flex}
