@@ -1,1 +1,60 @@
-@font-face{font-family:Papyrus;src:local(Papyrus),url(fonts/Papyrus.woff2)format("woff2");font-weight:400;font-style:normal;font-display:swap}html *{font-family:Papyrus,sans-serif}.color-linear-gradiant{background:linear-gradient(325deg,#fff 42%,#79b8ee 100%)}.footer-bottom{height:2.5rem;flex-direction:column;align-items:center;margin-top:13rem;display:flex}.max-width-970{max-width:970px}.font-size-2{font-size:1.75rem}.font-color-violet{color:#3730c8!important}
+@font-face {
+    font-family: 'Papyrus';
+    src: local('Papyrus'), url('fonts/Papyrus.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html * {
+    font-family: 'Papyrus', sans-serif;
+}
+
+.color-purple {
+    color: #3730c8 !important;
+}
+
+.font-size-15-rem {
+    font-size: 15rem;
+}
+
+.is-img-medium {
+    height: 12rem;
+}
+
+.color-linear-gradiant {
+    background: linear-gradient(325deg, rgba(255, 255, 255, 1) 42%, rgba(121, 184, 238, 1) 100%);
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 13rem;
+}
+
+.link-customized {
+    padding: 0.5rem;
+    border: solid;
+    border-radius: 0.75rem;
+}
+
+.max-width-970 {
+    max-width: 970px;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.font-size-2 {
+    font-size: 1.75rem;
+}
+
+.font-color-violet {
+    color: #3730c8 !important;
+}
+
+.width-100 {
+    width: 100% !important;
+}
